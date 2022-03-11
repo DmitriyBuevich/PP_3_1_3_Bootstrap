@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
-    <!--    <title>Login Page</title>-->
-    <!--    <link rel="icon" href="https://img.icons8.com/color/48/000000/spring-logo.png"/>-->
-    <!--    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>-->
-
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="https://img.icons8.com/color/48/000000/spring-logo.png"/>
@@ -20,29 +15,30 @@
 <h1>Welcome to Login PAGE!</h1>
 <hr>
 
+<!-- НЕ сделано !!!!!!!!!!! -->
 
 <br><br><br>
-<!--<div class="container col-3">-->
-<!--    <form th:action="/login" th:method="POST">-->
-<!--        <div class="form-group">-->
-<!--            <h3>Please sign in</h3>-->
+<div class="container col-3">
+    <!--    <form action="/login" th:method="POST">-->
+    <form class="form-signin" th:method="post" action="/login">
+        <div class="form-group">
+            <h3>Please sign in</h3>
 
-<!--            <label for="exampleInputEmail">-->
-<!--                <input type="email" class="form-control" id="exampleInputEmail"-->
-<!--                       aria-describedby="emailHelp"-->
-<!--                       placeholder="Email address" required>-->
+            <label for="exampleInputEmail">
+                <input type="email" class="form-control" id="exampleInputEmail"
+                       aria-describedby="emailHelp"
+                       placeholder="Email address" required autofocus>
 
-<!--                <input type="password" class="form-control"-->
-<!--                       id="exampleInputPassword"-->
-<!--                       placeholder="Password" required>-->
-<!--            </label>-->
-<!--        </div>-->
-<!--        <button type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>-->
-<!--    </form>-->
-<!--</div>-->
-
-
-
+                <input type="password" class="form-control"
+                       id="exampleInputPassword"
+                       placeholder="Password" required>
+            </label>
+        </div>
+        <!--        <input name="_csrf" type="hidden" value="99041075-6ddc-4243-93d6-35b73dab30e2"/>-->
+        <input name="_csrf" type="hidden" value="1c4906a0-5700-471a-8e95-eb9611aa1109"/>
+        <button type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>
+    </form>
+</div>
 
 
 <div>

@@ -33,7 +33,7 @@ public class AdminController {
 
 
         model.addAttribute("users", userService.getAllUser());
-        model.addAttribute("newUser", new User());                  // добавил
+        model.addAttribute("newUser", new User());
         model.addAttribute("roleList", roleService.getAllRoles());
 
         return "admin";
